@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"07287569ba51f507","type":"group","x":-480,"y":-301,"width":290,"height":461,"label":"Example Protocols"},
+		{"id":"f082600414ac145b","type":"group","x":-73,"y":-301,"width":290,"height":461,"label":"Internet Protocol Suite"},
+		{"id":"f82ae640b1b8c892","type":"group","x":320,"y":-301,"width":290,"height":461,"label":"External Connections"},
+		{"id":"c20703e9ea60b009","type":"text","text":"Application Layer","x":-53,"y":-281,"width":250,"height":60},
+		{"id":"322cc98c2ea86b7f","type":"text","text":"Transport Layer","x":-53,"y":-160,"width":250,"height":60},
+		{"id":"f846ef0fe210b463","type":"text","text":"Internet Layer","x":-53,"y":-40,"width":250,"height":60},
+		{"id":"cd7bc6cce9e88496","type":"text","text":"Link Layer","x":-53,"y":80,"width":250,"height":60},
+		{"id":"533b8c97bfb5f528","type":"text","text":"HTTP, SMTP, DNS","x":-460,"y":-281,"width":250,"height":60},
+		{"id":"c54b04c0a2ca4160","type":"text","text":"TCP, UDP","x":-460,"y":-160,"width":250,"height":60},
+		{"id":"f921a3fa86e43825","type":"text","text":"IPv4, IPv6","x":-460,"y":-40,"width":250,"height":60},
+		{"id":"26a223f2382deb6e","type":"text","text":"Ethernet, PPP","x":-460,"y":80,"width":250,"height":60},
+		{"id":"50afc835f8778941","type":"text","text":"Physical Network","x":340,"y":80,"width":250,"height":60},
+		{"id":"9238d7f27321fbfd","type":"text","text":"User Application","x":340,"y":-281,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"1d373435e35738d5","fromNode":"533b8c97bfb5f528","fromSide":"right","toNode":"c20703e9ea60b009","toSide":"left"},
+		{"id":"0b429a981c86ed2c","fromNode":"c54b04c0a2ca4160","fromSide":"right","toNode":"322cc98c2ea86b7f","toSide":"left"},
+		{"id":"0a66dd10765fe12c","fromNode":"f921a3fa86e43825","fromSide":"right","toNode":"f846ef0fe210b463","toSide":"left"},
+		{"id":"0b5982aa6a19b442","fromNode":"26a223f2382deb6e","fromSide":"right","toNode":"cd7bc6cce9e88496","toSide":"left"},
+		{"id":"0df750dc53b36f75","fromNode":"c20703e9ea60b009","fromSide":"bottom","toNode":"322cc98c2ea86b7f","toSide":"top"},
+		{"id":"b17c6ac6ff1c3027","fromNode":"322cc98c2ea86b7f","fromSide":"top","toNode":"c20703e9ea60b009","toSide":"bottom"},
+		{"id":"41ce811cf811060a","fromNode":"322cc98c2ea86b7f","fromSide":"bottom","toNode":"f846ef0fe210b463","toSide":"top"},
+		{"id":"7408ff85f1b9cba4","fromNode":"f846ef0fe210b463","fromSide":"top","toNode":"322cc98c2ea86b7f","toSide":"bottom"},
+		{"id":"184a9103ce94ecc8","fromNode":"cd7bc6cce9e88496","fromSide":"top","toNode":"f846ef0fe210b463","toSide":"bottom"},
+		{"id":"34885a12735deab4","fromNode":"f846ef0fe210b463","fromSide":"bottom","toNode":"cd7bc6cce9e88496","toSide":"top"}
+	]
+}
