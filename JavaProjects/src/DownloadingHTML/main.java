@@ -13,10 +13,10 @@ public class main {
     ReadableByteChannel rbc;
     ByteBuffer bb;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        try{
-            URL url = new URL("www.google.com");
+        try {
+            URL url = new URL("http://google.com");
             URLConnection urlConnection = url.openConnection();
 
             InputStream inputStream = urlConnection.getInputStream();
@@ -25,14 +25,14 @@ public class main {
 
             String line = null;
 
-            while(readableByteChannel.read(buffer)>0){
+            while (readableByteChannel.read(buffer) > 0) {
                 System.out.println(new String(buffer.array()));
                 buffer.clear();
             }
             readableByteChannel.close();
 
 
-        } catch(IOException exception){
+        } catch (IOException exception) {
             System.out.println(exception.getMessage());
         }
     }
